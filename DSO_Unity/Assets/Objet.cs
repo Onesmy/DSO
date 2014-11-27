@@ -13,14 +13,5 @@ public abstract class Objet { // "Object" est une classe native, non ?
 		this._position = position;
 	}
 
-	// Use this for initialization
-	void Start () {
-
-	}
-
-
-	// Update is called once per frame
-	void Update () {
-
-	}
+	//CV: Start et update ne sont pas utiles ici normalement
 }

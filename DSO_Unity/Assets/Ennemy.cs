@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public abstract class Ennemy : Object {
+public abstract class Ennemy : Objet {
 	//Attributs privés
 	private string _nom;
 	private float _vitesse;
@@ -35,13 +35,14 @@ public abstract class Ennemy : Object {
 		set{ this._argent = value;	}
 	}
 	//A implémenter
-	/*public string IList<StatusEffect> Effets{
+	/*public IList<StatusEffect> Effets{
 		get	{ return this._effets;	}
 		set{ this._effets = value;	}
 	}*/
 
 	//Constructeur
-	public Ennemy(string nom, float vitesse, int pointDeVie, int experience, int argent)
+	//Appelle objet pour construire le sprite et la position initiale.
+	public Ennemy(Sprite sprite, Vector2 position, string nom, float vitesse, int pointDeVie, int experience, int argent) : base(sprite, position)
 	{
 		this.Nom = nom;
 		this.Vitesse = vitesse;
@@ -49,7 +50,12 @@ public abstract class Ennemy : Object {
 		this.Experience = experience;
 		this.Argent = argent;
 		//A implémenter
+		//Les StatusEffect devraient avoir un effet seulement sur la valeur de retour (La vitesse initiale ne devrait pas changer
 		//this.Effets = new List<StatusEffect>;
+	}
+
+	public Ennemy(Sprite sprite, Vector2 position, string nom) : base(sprite, position){
+		this.Nom = nom;
 	}
 
 	// Use this for initialization

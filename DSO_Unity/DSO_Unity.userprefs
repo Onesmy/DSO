@@ -1,10 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Ennemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\NewBehaviourScript.cs">
     <Files>
-      <File FileName="Assets\Ennemy.cs" Line="33" Column="20" />
+      <File FileName="Assets\GenericEnnemy.cs" Line="13" Column="7" />
+      <File FileName="Assets\Ennemy.cs" Line="1" Column="1" />
       <File FileName="Assets\Tower.cs" Line="1" Column="1" />
       <File FileName="Assets\Objet.cs" Line="1" Column="1" />
+      <File FileName="Assets\NewBehaviourScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
