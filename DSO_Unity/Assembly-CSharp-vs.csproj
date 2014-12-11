@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Ennemy.cs" />
+     <Compile Include="Assets\EnnemyManager.cs" />
      <Compile Include="Assets\GenericEnnemy.cs" />
      <Compile Include="Assets\Objet.cs" />
      <Compile Include="Assets\Tower.cs" />
